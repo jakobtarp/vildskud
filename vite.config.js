@@ -13,8 +13,8 @@ export default defineConfig({
     outDir: resolve("dist"),
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "src/index.html"),
-        program: resolve(__dirname, "src/program.html"),
+        main: resolve(__dirname, "src/"),
+
         // about: resolve(__dirname, "src/about.html"),
       },
     },
