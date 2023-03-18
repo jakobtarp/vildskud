@@ -10,7 +10,7 @@
   </head>
 
   <body class="bg-white">
-    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-red-400' : isOpen , 'bg-white' : !isOpen}">
+    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-red-400' : isOpen , 'bg-white' : !isOpen}">
       <!--Logo etc-->
       <div class="mr-6 flex flex-shrink-0 items-center text-black">
         <a class="text-white no-underline hover:text-gray-600 hover:no-underline" href="index.html">
@@ -47,6 +47,7 @@
         </ul>
       </div>
     </nav>
+
     <div class="mx-auto grid place-items-center bg-white px-5">
       <h1 class="text-center">Vildskud Festival</h1>
       <h2 class="text-center">2023</h2>
@@ -54,13 +55,35 @@
       <h4 class="mb-20 font-normal">Vildskuds mål er at give undergrunden i dansk scenekunst en platform med mulighed for at møde et bredt publikum, og på den måde skabe synlighed for vækstlaget. Desuden kan de deltagende scenekunstgrupper også møde hinanden på tværs af genrer og arbejdsmetoder med henblik på gensidig udvikling og læring.</h4>
     </div>
     <!-- hero unit -->
-
-    <!-- Sektion 1 / Reviews  -->
-
-    <div class="grid grid-cols-3">
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="px-8">
+      <!-- Sektion 1 / Reviews  -->
+      <div class="grid h-screen place-items-center">
+        <h2 class="mt-auto">Anmeldelser</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="grid gap-3">
+            <img class="mx-auto w-48" src="img/PR-billede-Junos-Disicple.webp" alt="" />
+            <div class="flex place-content-center">
+              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex alias, laborum porro quam, eligendi quis temporibus mollitia.</p>
+            <div class="grid text-white"><a class="mt-4 rounded-xl bg-red-500 px-6 py-3 text-center" href="#">Køb billet</a></div>
+          </div>
+          <div class="grid gap-3">
+            <img class="mx-auto w-48" src="img/PR-billede-Junos-Disicple.webp" alt="" />
+            <div class="flex place-content-center">
+              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex alias, laborum porro quam, eligendi quis temporibus mollitia.</p>
+            <a class="mt-4 rounded-xl bg-red-500 px-6 py-3 text-center text-white" href="#">Køb billet</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
