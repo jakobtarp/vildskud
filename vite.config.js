@@ -16,8 +16,10 @@ export default defineConfig({
         one: resolve(__dirname, "src/index.html"),
         two: resolve(__dirname, "src/program.html"),
         three: resolve(__dirname, "src/workshops.html"),
-        four: resolve(__dirname, "src/værmed.html"),
-        five: resolve(__dirname, "src/omos.html"),
+        four: resolve(__dirname, "src/omvildskud.html"),
+        five: resolve(__dirname, "src/opencall.html"),
+        six: resolve(__dirname, "src/frivillige.html"),
+        seven: resolve(__dirname, "src/kontakt.html"),
 
         // about: resolve(__dirname, "src/about.html"),
       },
