@@ -41,6 +41,18 @@
           <li class="mr-3">
             <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="værmed.html" @click="isOpen = false">Vær med</a>
           </li>
+
+          <li class="flex-col space-y-10">
+            <div>
+              <button class="peer px-5 py-2 text-black hover:scale-110 hover:text-red-500 hover:underline">Vær med</button>
+
+              <!-- the menu here -->
+              <div class="fixed hidden w-[200px] flex-col bg-white drop-shadow-lg hover:flex peer-hover:flex">
+                <a class="px-5 py-3 hover:bg-gray-200" href="#">Frivillige</a>
+                <a class="px-5 py-3 hover:bg-gray-200" href="#">Open Call</a>
+              </div>
+            </div>
+          </li>
           <li class="mr-3">
             <a class="200ms inline-block py-2 px-4 font-extrabold text-red-500 underline filter transition hover:scale-110 hover:text-red-400 hover:underline" href="omos.html" @click="isOpen = false">Om os </a>
           </li>
