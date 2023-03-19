@@ -31,7 +31,7 @@
       <div class="w-full flex-grow lg:flex lg:w-auto lg:items-center" :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
         <ul class="list-reset flex-1 items-center justify-end pt-6 lg:flex lg:pt-0">
           <li class="mr-3">
-            <a class="200ms inline-block py-2 px-4 font-bold text-red-500 underline filter transition hover:scale-110 hover:text-red-400 hover:underline" href="index.html" @click="isOpen = false">Forside </a>
+            <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="index.html" @click="isOpen = false">Forside </a>
           </li>
           <li class="mr-3">
             <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="program.html" @click="isOpen = false">Program </a>
@@ -41,12 +41,12 @@
           </li>
           <li class="flex-col space-y-10">
             <div>
-              <button class="200ms peer px-4 py-2 text-start text-black filter transition hover:scale-110 hover:text-red-500 hover:underline">Vær med <img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
+              <button class="200ms underlin peer px-4 py-2 text-start font-bold text-red-500 filter transition hover:scale-110 hover:text-red-500 hover:underline">Vær med <img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
 
               <!-- the menu here -->
               <div class="fixed hidden w-[200px] flex-col divide-y divide-gray-700 bg-white drop-shadow-lg hover:flex peer-hover:flex">
                 <a class="px-5 py-3 hover:bg-red-300" href="frivillige.html">Frivillige</a>
-                <a class="px-5 py-3 hover:bg-red-300" href="opencall.html">Open Call</a>
+                <a class="underlin px-5 py-3 font-bold text-red-500 hover:bg-red-300" href="opencall.html">Open Call</a>
               </div>
             </div>
           </li>
@@ -65,56 +65,61 @@
       </div>
     </nav>
 
-    <div class="mx-auto grid place-items-center bg-white px-5">
-      <h1 class="text-center">Vildskud Festival</h1>
-      <h2 class="text-center">2023</h2>
-      <h3 class="mb-10 text-center">2. - 6. August</h3>
-      <h4 class="mb-20 font-normal">Vildskuds mål er at give undergrunden i dansk scenekunst en platform med mulighed for at møde et bredt publikum, og på den måde skabe synlighed for vækstlaget. Desuden kan de deltagende scenekunstgrupper også møde hinanden på tværs af genrer og arbejdsmetoder med henblik på gensidig udvikling og læring.</h4>
-    </div>
-    <!-- hero unit -->
     <div class="px-8">
-      <!-- Sektion 1 / Reviews  -->
-      <div class="grid h-screen place-items-center">
-        <h2 class="mt-auto">Anmeldelser</h2>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="grid gap-3">
-            <img class="mx-auto w-48" src="img/PR-billede-Junos-Disicple.webp" alt="" />
-            <div class="flex place-content-center">
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex alias, laborum porro quam, eligendi quis temporibus mollitia.</p>
-            <div class="grid text-white"><a class="mt-4 rounded-xl bg-red-500 px-6 py-3 text-center" href="#">Køb billet</a></div>
+      <!-- Sektion 1 / Kort om Open Call -->
+      <div class="mb-32 grid">
+        <div>
+          <h1 class="mt-10 mb-32">Open Call</h1>
+          <h2 class="mt-auto">Vil du optræde her?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti incidunt debitis sapiente maiores totam dolor quas fuga? Delectus aliquam amet sequi provident, tempora repudiandae alias numquam vero quaerat ducimus.</p>
+        </div>
+      </div>
+      <div class="lg:grid lg:grid-cols-2 lg:gap-5">
+        <!-- Sektion 2 / 20 års jubilæum -->
+        <div class="mb-32">
+          <h2>Vis din scenekunst!</h2>
+          <div class="grid gap-4">
+            <p>VILDSKUD er en fejring af alle former for upcoming scenekunst. Alt fra klassisk teater, udendørs danseoplevelser, storytelling lysshows, musiske sanseoplevelser – kun fantasien sætter grænser!</p>
+            <p>Den 2.-6. august giver jer spirene scenekunstnere en platform at udfolde og udvikle jeres forestillinger på med mulighed for at vinde lækre priser, få sparring med dygtige dramaturger, vise jeres færdigheder til det professionelle scenekunstlag og anmeldere, samt udvide jeres netværk.</p>
+            <p>Lyder det som noget for dig/jer?</p>
+            <p>Vil du være frivillig, eller har du spørgsmål <span class="font-semibold">så skriv til: frivillig@vildskud.dk</span></p>
           </div>
-          <div class="grid gap-3">
-            <img class="mx-auto w-48" src="img/PR-billede-Junos-Disicple.webp" alt="" />
-            <div class="flex place-content-center">
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex alias, laborum porro quam, eligendi quis temporibus mollitia.</p>
-            <a class="mt-4 rounded-xl bg-red-500 px-6 py-3 text-center text-white" href="#">Køb billet</a>
+        </div>
+
+        <!-- Sektion 3 / Hvordan ansøger man -->
+        <div class="mb-32">
+          <h2>Hvordan ansøger man?</h2>
+          <div class="grid gap-4">
+            <p>Ansøgningsprocessen er en todelt affære; hvor du først udfylder og indsender en <a class="text-red-600 underline" href="https://docs.google.com/document/d/1oV_h9uR5l-Mhf8ZNOUTh9VOTDAbcrjsk/edit"> ansøgningsblanket</a>.</p>
+            <p>Ansøgningsblanketten skal du sende per mail til info@vildskud.dk senest 1. april 2022, kl. 18.00.</p>
+            <p>Herefter vil du blive indkaldt til showcases, som ligger i weekenden 23-23 april 2022.</p>
+          </div>
+        </div>
+        <!-- Sektion 4 / Rødderne -->
+        <div class="mb-32">
+          <h2>Rødderne - kom og vær med!</h2>
+          <div class="grid gap-4">
+            <p>Bag VILDSKUD står der hvert år et hold af frivillige arrangører.</p>
+            <p>Arrangørgruppen arbejder med en flad struktur og er altid åben for at få flere med. Sammensætningen af gruppen forandrer sig fra år til år og derfor forandrer måden hvorpå arbejdet med festivalen udføres sig også konstant.</p>
+            <p>Ønsker du at være en del af arrangørgruppen til Vildskud Festival 2020? Så send en motiveret ansøgning til <span class="font-semibold">info@vildskud.dk</span>. Vi tager imod ansøgninger hele året, så tøv ikke med at kontakte os.</p>
+            <p>Som arrangør i Vildskud kan du få erfaring inden for:</p>
+
+            <p>Projektledelse, budgetplanlægning, pr-strategier på SoMe platforme, udfoldelse af pressemeddelelser, grafisk design af program og plakater, networking og samarbejde med professionelle scener i København. Planlægning og udvikling af Danmarks største festival for det scenekunstneriske vækstlag!</p>
           </div>
         </div>
       </div>
+      <!-- Footer -->
     </div>
-
-    <!-- Footer -->
-
     <footer class="bottom-0 mx-auto w-full bg-white dark:bg-red-400">
-      <div class="container mx-auto w-full gap-8 p-4 sm:p-6">
-        <div class="md:flex md:justify-between">
+      <div class="container mx-auto w-full p-4 sm:p-6">
+        <div class="gap-8 md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <a href="https://www.vildskud.dk/" class="flex items-center">
               <img src="img/vildskud-logo-2022.webp" class="mr-3 h-8" alt="Vildskud logo" />
               <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">Vildskud</span>
             </a>
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
             <div>
               <h2 class="mb-6 text-sm font-extrabold uppercase text-gray-900 underline dark:text-white">Kontakt</h2>
               <ul class="text-gray-600 dark:text-white">
