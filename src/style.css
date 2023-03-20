@@ -3,27 +3,24 @@
 @tailwind utilities;
 
 h1 {
-  font-weight: 700;
-  font-size: 4rem;
-  color: black;
+  text-transform: uppercase;
+
+  font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 h2 {
-  font-weight: 700;
-  font-size: 2.3rem;
-  margin-bottom: 5px;
-  color: black;
+  text-transform: uppercase;
+
+  font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 
 h3 {
-  font-weight: 700;
-  font-size: 1.7rem;
-  margin-bottom: 5px;
-  color: black;
+  text-transform: uppercase;
+
+  font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 
 h4 {
-  font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: 5px;
-  color: black;
+  text-transform: uppercase;
+
+  font-family: "Fira Sans Extra Condensed", sans-serif;
 }

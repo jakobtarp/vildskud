@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Vildskud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-white">
-    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-red-400' : isOpen , 'bg-white' : !isOpen}">
+  <body class="">
+    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-gray-200' : isOpen , 'bg-gray-100' : !isOpen}">
       <!--Logo etc-->
-      <div class="mr-6 flex flex-shrink-0 items-center text-black">
+      <div class="mr-6 flex flex-shrink-0 items-center text-black lg:block">
         <a class="text-white no-underline hover:text-gray-600 hover:no-underline" href="index.html">
           <img class="w-20" src="img/vildskud-logo-2022.webp" alt="" />
         </a>
@@ -39,7 +42,7 @@
             <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="workshops.html" @click="isOpen = false">Workshops </a>
           </li>
           <li class="flex-col space-y-10">
-            <div>
+            <div class="hidden lg:block">
               <button class="200ms peer px-4 py-2 text-start text-black filter transition hover:scale-110 hover:text-red-500 hover:underline">Vær med <img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
 
               <!-- the menu here -->
@@ -49,8 +52,22 @@
               </div>
             </div>
           </li>
+          <li>
+            <button class="peer px-4 py-2 text-start text-black lg:hidden">Vær med <img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
+          </li>
+          <li class="ml-5 lg:hidden"><a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="frivillige.html">Frivillige</a></li>
+          <li class="ml-5 mt-3 lg:hidden"><a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="opencall.html">Open Call</a></li>
+          <li class="mr-3 mt-3 lg:hidden">
+            <button class="peer py-2 px-4 text-black">Om os<img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
+          </li>
+          <li class="ml-5 lg:hidden">
+            <a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="omvildskud.html">Om Vildskud</a>
+          </li>
+          <li class="ml-5 mt-3 lg:hidden">
+            <a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="kontakt.html">Kontakt</a>
+          </li>
           <li class="flex-col space-y-10">
-            <div>
+            <div class="hidden lg:block">
               <button class="200ms peer py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-500 hover:underline">Om os<img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
 
               <!-- the menu here -->
@@ -63,45 +80,65 @@
         </ul>
       </div>
     </nav>
-
-    <div class="mx-auto grid place-items-center bg-white px-5">
-      <h1 class="text-center">Vildskud Festival</h1>
-      <h2 class="text-center">2023</h2>
-      <h3 class="mb-10 text-center">2. - 6. August</h3>
-      <h4 class="mb-20 font-normal">Vildskuds mål er at give undergrunden i dansk scenekunst en platform med mulighed for at møde et bredt publikum, og på den måde skabe synlighed for vækstlaget. Desuden kan de deltagende scenekunstgrupper også møde hinanden på tværs af genrer og arbejdsmetoder med henblik på gensidig udvikling og læring.</h4>
-    </div>
-    <!-- hero unit -->
     <div class="px-8">
-      <!-- Sektion 1 / Reviews  -->
-      <div class="grid h-screen place-items-center">
-        <h2 class="mt-auto">Anmeldelser</h2>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="grid gap-3">
-            <img class="mx-auto w-48" src="img/PR-billede-Junos-Disicple.webp" alt="" />
-            <div class="flex place-content-center">
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+      <div class="mx-auto grid grid-cols-2">
+        <div>
+          <h1 class="mt-20 text-7xl font-bold">Vildskud</h1>
+          <h2 class="text-3xl">festival</h2>
+          <h2 class="text-3xl">scenekunst</h2>
+        </div>
+        <div></div>
+        <div></div>
+        <div class="text-end">
+          <h3 class="text-2xl">København</h3>
+          <h3 class="text-6xl">2023</h3>
+          <h4 class="text-3xl">2. - 6. August</h4>
+        </div>
+        <div class="mt-20">
+          <h3 class="text-4xl text-sky-300">zebu</h3>
+          <h3 class="text-4xl text-pink-300">downunder</h3>
+          <h4 class="text-4xl text-orange-300">teaterhuset</h4>
+          <h3 class="text-end text-base text-gray-500">xenon</h3>
+          <h4 class="text-end text-base text-gray-500">vox</h4>
+        </div>
+      </div>
+      <!-- <h4 class="mb-20 font-normal">Vildskuds mål er at give undergrunden i dansk scenekunst en platform med mulighed for at møde et bredt publikum, og på den måde skabe synlighed for vækstlaget. Desuden kan de deltagende scenekunstgrupper også møde hinanden på tværs af genrer og arbejdsmetoder med henblik på gensidig udvikling og læring.</h4> -->
+
+      <section class="">
+        <h1 class="my-40 text-center text-4xl italic md:text-6xl lg:text-6xl"><span class="text-6xl text-red-400 md:text-8xl lg:text-8xl">"</span>En af de <span class="text-5xl text-red-400 md:text-8xl lg:text-8xl">bedste </span> oplevelser jeg har <span class="text-5xl text-red-400 md:text-8xl lg:text-8xl">prøvet.</span> Et friskt <span class="text-5xl text-red-400 md:text-8xl lg:text-8xl">pust</span>. <span class="text-6xl text-red-400 md:text-8xl lg:text-8xl">"</span></h1>
+      </section>
+      <!-- hero unit -->
+      <div class="bg-stone-100 px-8">
+        <!-- Sektion 1 / Reviews  -->
+        <div class="grid h-screen place-items-center">
+          <h2 class="mt-auto">Anmeldelser</h2>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="grid gap-3">
+              <img class="mx-auto w-48" src="img/PR-billede-Junos-Disicple.webp" alt="" />
+              <div class="flex place-content-center">
+                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex alias, laborum porro quam, eligendi quis temporibus mollitia.</p>
+              <div class="grid text-white"><a class="mt-4 rounded-xl bg-red-500 px-6 py-3 text-center" href="#">Køb billet</a></div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex alias, laborum porro quam, eligendi quis temporibus mollitia.</p>
-            <div class="grid text-white"><a class="mt-4 rounded-xl bg-red-500 px-6 py-3 text-center" href="#">Køb billet</a></div>
-          </div>
-          <div class="grid gap-3">
-            <img class="mx-auto w-48" src="img/PR-billede-Junos-Disicple.webp" alt="" />
-            <div class="flex place-content-center">
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+            <div class="grid gap-3">
+              <img class="mx-auto w-48" src="img/PR-billede-Junos-Disicple.webp" alt="" />
+              <div class="flex place-content-center">
+                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex alias, laborum porro quam, eligendi quis temporibus mollitia.</p>
+              <a class="mt-4 rounded-xl bg-red-500 px-6 py-3 text-center text-white" href="#">Køb billet</a>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex alias, laborum porro quam, eligendi quis temporibus mollitia.</p>
-            <a class="mt-4 rounded-xl bg-red-500 px-6 py-3 text-center text-white" href="#">Køb billet</a>
           </div>
         </div>
       </div>
     </div>
-
     <!-- Footer -->
 
     <footer class="bottom-0 mx-auto w-full bg-white dark:bg-red-400">
