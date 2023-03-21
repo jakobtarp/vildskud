@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Vildskud</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body class="">
-    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-gray-200' : isOpen , 'bg-gray-100' : !isOpen}">
+    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ ' bg-transparent' : isOpen , 'bg-transparent' : !isOpen}">
       <!--Logo etc-->
       <div class="mr-6 flex flex-shrink-0 items-center text-black lg:block">
         <a class="text-white no-underline hover:text-gray-600 hover:no-underline" href="index.html">
@@ -46,7 +46,7 @@
               <button class="200ms peer px-4 py-2 text-start text-black filter transition hover:scale-110 hover:text-red-500 hover:underline">Vær med <img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
 
               <!-- the menu here -->
-              <div class="fixed hidden w-[200px] flex-col divide-y divide-gray-700 bg-white drop-shadow-lg hover:flex peer-hover:flex">
+              <div class="fixed hidden w-[200px] flex-col divide-y divide-gray-700 bg-transparent drop-shadow-lg hover:flex peer-hover:flex">
                 <a class="px-5 py-3 hover:bg-red-300" href="frivillige.html">Frivillige</a>
                 <a class="px-5 py-3 hover:bg-red-300" href="opencall.html">Open Call</a>
               </div>
@@ -71,7 +71,7 @@
               <button class="200ms peer py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-500 hover:underline">Om os<img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
 
               <!-- the menu here -->
-              <div class="fixed hidden w-[200px] flex-col divide-y divide-gray-700 bg-white drop-shadow-lg hover:flex peer-hover:flex">
+              <div class="fixed hidden w-[200px] flex-col divide-y divide-gray-700 bg-transparent drop-shadow-lg hover:flex peer-hover:flex">
                 <a class="px-5 py-3 hover:bg-red-300" href="omvildskud.html">Om Vildskud</a>
                 <a class="px-5 py-3 hover:bg-red-300" href="kontakt.html">Kontakt</a>
               </div>
@@ -82,33 +82,109 @@
     </nav>
 
     <!-- hero -->
-    <div class="bg-hero bg-cover bg-right-bottom bg-no-repeat px-8">
+    <div class="bg-hero bg-cover bg-right-bottom bg-no-repeat px-8 bg-stone-100">
       <div class="mx-auto grid grid-cols-2">
-        <div>
-          <h1 class="mt-20 text-7xl font-bold">Vildskud</h1>
+        <div class="">
+          <h1 class="mt-10 text-7xl font-bold">Vildskud</h1>
           <h2 class="text-3xl font-light">festival</h2>
           <h2 class="text-3xl font-light">scenekunst</h2>
         </div>
         <div></div>
         <div></div>
         <div class="text-end">
-          <h3 class="text-2xl">København</h3>
+          <h3 class="text-3xl">København</h3>
           <h3 class="text-6xl">2023</h3>
           <h4 class="text-3xl">2. - 6. August</h4>
         </div>
-        <div class="mt-20">
+        <!-- <div class="mt-20">
           <h3 class="text-4xl text-sky-300">zebu</h3>
           <h3 class="text-4xl text-pink-300">downunder</h3>
           <h4 class="text-4xl text-orange-300">teaterhuset</h4>
           <h3 class="text-end text-base text-gray-500">xenon</h3>
           <h4 class="text-end text-base text-gray-500">vox</h4>
-        </div>
+        </div> -->
       </div>
       <!-- <h4 class="mb-20 font-normal">Vildskuds mål er at give undergrunden i dansk scenekunst en platform med mulighed for at møde et bredt publikum, og på den måde skabe synlighed for vækstlaget. Desuden kan de deltagende scenekunstgrupper også møde hinanden på tværs af genrer og arbejdsmetoder med henblik på gensidig udvikling og læring.</h4> -->
 
       <section class="">
-        <h1 class="my-40 text-center text-4xl italic md:text-6xl lg:text-6xl"><span class="text-6xl text-red-400 md:text-8xl lg:text-8xl">"</span>En af de <span class="text-5xl text-red-400 md:text-8xl lg:text-8xl">bedste </span> oplevelser jeg har <span class="text-5xl text-red-400 md:text-8xl lg:text-8xl">prøvet.</span> Et friskt <span class="text-5xl text-red-400 md:text-8xl lg:text-8xl">pust</span>. <span class="text-6xl text-red-400 md:text-8xl lg:text-8xl">"</span></h1>
+        <h1 class="my-40 lowercase text-center text-4xl italic md:text-6xl lg:text-6xl">"Vildskud er den førende
+festival for teater og 
+performance kunst
+i København" -Person, festivalsgæst</h1>
       </section>
+
+      <!-- Tabel -->
+
+      <h2>Program</h2>
+
+                   <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-5 p-2 rounded-sm">
+       <div> <img class="pr-2" src="img/mand_ligger_som_mand_har_redt_lores_1x1.webp" alt=""></div>
+       <div class="grid content-between"> <h3 class="text-lg font-medium">Mand ligger som mand har redt</h3>
+       <div class="flex gap-2 "> <p class="bg-amber-200 px-2 rounded-sm">05/08</p>
+        <p class="bg-lime-300 px-2 rounded-sm">06/08</p>
+        <p class=" px-2 rounded-sm text-transparent">21/08</p></div>
+<h4 class="text-gray-400">VOX, Teaterhuset</h4></div>
+      </div>
+                       <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-2 p-2 rounded-sm">
+       <div> <img class="pr-2" src="img/what_fires_together_wires_together_lores_1x1.webp" alt=""></div>
+       <div class="grid content-between"> <h3 class="text-lg font-medium">What fires together wires together</h3>
+       <div class="flex gap-2 "> <p class="bg-red-300 px-2 rounded-sm">02/08</p>
+        <p class="bg-amber-200 px-2 rounded-sm">03/08</p>
+        <p class=" px-2 rounded-sm text-transparent">21/08</p></div>
+<h4 class="text-gray-400">ZeBU</h4></div>
+      </div>
+
+      <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-2 p-2 rounded-sm">
+       <div> <img class="pr-2" src="img/gogo-yo-yoku_lores_1x1.webp" alt=""></div>
+       <div class="grid content-between"> <h3 class="text-lg font-medium">gogo yo-yoku</h3>
+       <div class="flex gap-2 "> <p class="bg-lime-300 px-2 rounded-sm">04/08</p>
+        <p class="bg-red-300 px-2 rounded-sm">05/08</p>
+       <p class=" px-2 rounded-sm text-transparent">21/08</p></div>
+<h4 class="text-gray-400">Xenon, Teaterhuset</h4></div>
+      </div>
+
+      <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-2 p-2 rounded-sm">
+       <div> <img class="pr-2" src="img/re-birth_lores_1x1.webp" alt=""></div>
+       <div class="grid content-between"> <h3 class="text-lg font-medium">re-birth</h3>
+       <div class="flex gap-2 "> <p class="bg-red-300 px-2 rounded-sm">04/08</p>
+        <p class="bg-amber-200 px-2 rounded-sm">05/08</p>
+        <p class="bg-lime-300 px-2 rounded-sm">06/08</p></div>
+<h4 class="text-gray-400">Downunder</h4></div>
+      </div>
+
+      <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-2 p-2 rounded-sm">
+       <div> <img class="pr-2" src="img/frygten_for_at_leve_lores_1x1.webp" alt=""></div>
+       <div class="grid content-between"> <h3 class="text-lg font-medium">frygten for ikke at leve</h3>
+       <div class="flex gap-2 "> <p class="bg-amber-200 px-2 rounded-sm">05/08</p>
+        <p class="bg-lime-300 px-2 rounded-sm">06/08</p>
+         <p class=" px-2 rounded-sm text-transparent">21/08</p></div>
+<h4 class="text-gray-400">Xenon, Teaterhuset</h4></div>
+      </div>
+
+      <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-2 p-2 rounded-sm">
+       <div> <img class="pr-2" src="img/vild_med_mig_lores_1x1.webp" alt=""></div>
+       <div class="grid content-between"> <h3 class="text-lg font-medium">vild med mig</h3>
+       <div class="flex gap-2 "> <p class="bg-red-300 px-2 rounded-sm">02/08</p>
+        <p class="bg-amber-200 px-2 rounded-sm">03/08</p>
+       <p class=" px-2 rounded-sm text-transparent">21/08</p></div>
+<h4 class="text-gray-400">Vox, Teaterhuset</h4></div>
+      </div>
+
+      <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-2 p-2 rounded-sm">
+       <div> <img class="pr-2" src="img/det_levende_rum_lores_1x1.webp" alt=""></div>
+       <div class="grid content-between"> <h3 class="text-lg font-medium">det levende rum</h3>
+       <div class="flex gap-2 "> <p class="bg-red-300 px-2 rounded-sm">04/08</p>
+        <p class="bg-amber-200 px-2 rounded-sm">05/08</p>
+        <p class="bg-lime-300 px-2 rounded-sm">06/08</p></div>
+<h4 class="text-gray-400">ZeBU</h4></div>
+      </div>
+
+      
+
+     
+
+
+      
       <!-- hero unit -->
       <!-- <div class="bg-stone-100 px-8"> -->
         <!-- Sektion 1 / Reviews  -->
