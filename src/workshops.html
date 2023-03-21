@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Vildskud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet" />
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-white">
+  <body class="bg-hero bg-cover bg-right-top bg-no-repeat">
     <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-gray-200' : isOpen , 'bg-gray-100' : !isOpen}">
       <!--Logo etc-->
       <div class="mr-6 flex flex-shrink-0 items-center text-black lg:block">
@@ -80,38 +84,43 @@
 
     <div class="px-8">
       <!-- Sektion 1 / workshops -->
-      <h1>Workshops</h1>
+
       <h2 class="mt-auto">Er det noget for mig?</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti incidunt debitis sapiente maiores totam dolor quas fuga? Delectus aliquam amet sequi provident, tempora repudiandae alias numquam vero quaerat ducimus.</p>
 
       <!-- Sektion 2 / Workshops -->
+      <!-- <div class="fixed bottom-10 right-10 w-full">
+        <button class="t my-8 ml-auto rounded-full bg-red-500 px-5 py-2 text-sm font-bold">Next(Quiz)</button>
+      </div> -->
+      <div></div>
+      <div class="fixed bottom-10 right-10 float-right bg-red-600"><button class="">Køb</button></div>
       <div class="grid place-items-center md:grid-cols-2 lg:grid-cols-2">
-        <div class="s my-10 max-w-sm rounded-lg border-4 border-red-400 bg-white">
+        <div class="my-10 max-w-sm place-content-center rounded-sm bg-stone-100 bg-opacity-80 p-3 shadow-xl">
           <a href="#">
-            <img class="mx-auto w-auto rounded-t-lg" src="img/Billede1.webp" alt="" />
+            <div class="grid"><img class="mx-auto w-[295px]" src="img/mand_ligger_som_mand_har_redt_lores_1x1.webp" alt="" /></div>
           </a>
-          <div class="grid grid-cols-2 p-5">
-            <div>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Titel</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Venue</p>
-              <div class="grid grid-cols-2 gap-1">
-                <label class="my-auto" for="dato">D. 06/08</label>
+          <h3 class="mt-3 text-2xl font-medium">Mand ligger som mand har redt</h3>
 
-                <select name="dato" id="dato">
-                  <option value="Kl. 19.30">Kl. 19.30</option>
-                  <option value="Kl. 19.30">Kl. 21.15</option>
-                </select>
-                <label class="my-auto" for="dato">D. 06/08</label>
+          <p class="mb-4 text-lg text-gray-500">Venue</p>
 
-                <select name="dato" id="dato">
-                  <option value="Kl. 19.30">Kl. 19.30</option>
-                  <option value="Kl. 19.30">Kl. 21.15</option>
-                </select>
-              </div>
-            </div>
-            <a href="#" class="ml-auto mt-auto inline-flex items-center rounded-lg bg-red-600 px-6 py-3 text-center text-sm font-medium text-white hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300"> Køb billet</a>
+          <div class="flex gap-3">
+            <label class="my-auto inline-flex font-medium" for="dato">D. 06/08</label>
+
+            <select class="w-32 rounded-sm" name="dato" id="dato">
+              <option value="Tidspunkt">Tidspunkt</option>
+              <option value="Kl. 19.30">Kl. 19.30</option>
+              <option value="Kl. 19.30">Kl. 21.15</option>
+            </select>
+          </div>
+
+          <div class="mt-4 flex gap-3">
+            <label class="my-auto font-medium" for="dato">D. 06/08</label>
+
+            <select class="w-32" name="dato" id="dato">
+              <option value="Tidspunkt">Tidspunkt</option>
+              <option value="Kl. 19.30">Kl. 19.30</option>
+              <option value="Kl. 19.30">Kl. 21.15</option>
+            </select>
           </div>
         </div>
 
