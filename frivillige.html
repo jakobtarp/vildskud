@@ -7,13 +7,13 @@
     <title>Vildskud</title>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="./assets/style-ca0badcf.css">
+    <link rel="stylesheet" href="./assets/style-6f59e5b5.css">
   </head>
 
   <body class="bg-white">
-    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-red-400' : isOpen , 'bg-white' : !isOpen}">
+    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-gray-200' : isOpen , 'bg-gray-100' : !isOpen}">
       <!--Logo etc-->
-      <div class="mr-6 flex flex-shrink-0 items-center text-black">
+      <div class="mr-6 flex flex-shrink-0 items-center text-black lg:block">
         <a class="text-white no-underline hover:text-gray-600 hover:no-underline" href="index.html">
           <img class="w-20" src="img/vildskud-logo-2022.webp" alt="" />
         </a>
@@ -31,7 +31,7 @@
       <div class="w-full flex-grow lg:flex lg:w-auto lg:items-center" :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
         <ul class="list-reset flex-1 items-center justify-end pt-6 lg:flex lg:pt-0">
           <li class="mr-3">
-            <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="index.html" @click="isOpen = false">Forside </a>
+            <a class="200ms inline-block py-2 px-4 filter transition hover:scale-110 hover:text-red-400 hover:underline" href="index.html" @click="isOpen = false">Forside </a>
           </li>
           <li class="mr-3">
             <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="program.html" @click="isOpen = false">Program </a>
@@ -40,8 +40,8 @@
             <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="workshops.html" @click="isOpen = false">Workshops </a>
           </li>
           <li class="flex-col space-y-10">
-            <div>
-              <button class="200ms peer px-4 py-2 text-start font-bold text-red-500 underline filter transition hover:scale-110 hover:text-red-500 hover:underline">Vær med<img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
+            <div class="hidden lg:block">
+              <button class="200ms peer px-4 py-2 text-start font-bold text-red-500 underline filter transition hover:scale-110 hover:text-red-500 hover:underline">Vær med <img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
 
               <!-- the menu here -->
               <div class="fixed hidden w-[200px] flex-col divide-y divide-gray-700 bg-white drop-shadow-lg hover:flex peer-hover:flex">
@@ -50,8 +50,22 @@
               </div>
             </div>
           </li>
+          <li>
+            <button class="peer px-4 py-2 text-start text-black lg:hidden">Vær med <img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
+          </li>
+          <li class="ml-5 lg:hidden"><a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="frivillige.html">Frivillige</a></li>
+          <li class="ml-5 mt-3 lg:hidden"><a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="opencall.html">Open Call</a></li>
+          <li class="mr-3 mt-3 lg:hidden">
+            <button class="peer py-2 px-4 text-black">Om os<img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
+          </li>
+          <li class="ml-5 lg:hidden">
+            <a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="omvildskud.html">Om Vildskud</a>
+          </li>
+          <li class="ml-5 mt-3 lg:hidden">
+            <a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="kontakt.html">Kontakt</a>
+          </li>
           <li class="flex-col space-y-10">
-            <div>
+            <div class="hidden lg:block">
               <button class="200ms peer py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-500 hover:underline">Om os<img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
 
               <!-- the menu here -->

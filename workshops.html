@@ -7,13 +7,13 @@
     <title>Vildskud</title>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="./assets/style-ca0badcf.css">
+    <link rel="stylesheet" href="./assets/style-6f59e5b5.css">
   </head>
 
   <body class="bg-white">
-    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-red-400' : isOpen , 'bg-white' : !isOpen}">
+    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6 shadow-xl" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ 'shadow-lg bg-gray-200' : isOpen , 'bg-gray-100' : !isOpen}">
       <!--Logo etc-->
-      <div class="mr-6 flex flex-shrink-0 items-center text-black">
+      <div class="mr-6 flex flex-shrink-0 items-center text-black lg:block">
         <a class="text-white no-underline hover:text-gray-600 hover:no-underline" href="index.html">
           <img class="w-20" src="img/vildskud-logo-2022.webp" alt="" />
         </a>
@@ -31,7 +31,7 @@
       <div class="w-full flex-grow lg:flex lg:w-auto lg:items-center" :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
         <ul class="list-reset flex-1 items-center justify-end pt-6 lg:flex lg:pt-0">
           <li class="mr-3">
-            <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="index.html" @click="isOpen = false">Forside </a>
+            <a class="200ms inline-block py-2 px-4 filter transition hover:scale-110 hover:text-red-400 hover:underline" href="index.html" @click="isOpen = false">Forside </a>
           </li>
           <li class="mr-3">
             <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="program.html" @click="isOpen = false">Program </a>
@@ -40,7 +40,7 @@
             <a class="200ms inline-block py-2 px-4 font-bold text-red-500 underline filter transition hover:scale-110 hover:text-red-400 hover:underline" href="workshops.html" @click="isOpen = false">Workshops </a>
           </li>
           <li class="flex-col space-y-10">
-            <div>
+            <div class="hidden lg:block">
               <button class="200ms peer px-4 py-2 text-start text-black filter transition hover:scale-110 hover:text-red-500 hover:underline">Vær med <img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
 
               <!-- the menu here -->
@@ -50,8 +50,22 @@
               </div>
             </div>
           </li>
+          <li>
+            <button class="peer px-4 py-2 text-start text-black lg:hidden">Vær med <img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
+          </li>
+          <li class="ml-5 lg:hidden"><a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="frivillige.html">Frivillige</a></li>
+          <li class="ml-5 mt-3 lg:hidden"><a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="opencall.html">Open Call</a></li>
+          <li class="mr-3 mt-3 lg:hidden">
+            <button class="peer py-2 px-4 text-black">Om os<img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
+          </li>
+          <li class="ml-5 lg:hidden">
+            <a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="omvildskud.html">Om Vildskud</a>
+          </li>
+          <li class="ml-5 mt-3 lg:hidden">
+            <a class="200ms peer py-2 px-4 font-light text-black filter transition hover:scale-110 hover:text-red-500 hover:underline" href="kontakt.html">Kontakt</a>
+          </li>
           <li class="flex-col space-y-10">
-            <div>
+            <div class="hidden lg:block">
               <button class="200ms peer py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-500 hover:underline">Om os<img class="inline-flex w-8" src="https://api.iconify.design/ic:baseline-keyboard-arrow-down.svg?black=%23888888" alt="" /></button>
 
               <!-- the menu here -->
@@ -73,12 +87,13 @@
 
       <!-- Sektion 2 / Workshops -->
       <div class="grid place-items-center md:grid-cols-2 lg:grid-cols-2">
-        <div class="s my-10 max-w-sm rounded-lg border-4 border-red-400 bg-white">
+        <div class="my-10 max-w-sm rounded-sm bg-stone-100 bg-opacity-80 shadow-xl">
           <a href="#">
-            <img class="mx-auto w-auto rounded-t-lg" src="img/Billede1.webp" alt="" />
+            <div class="grid place-content-center pt-5"><img class="w-56" src="img/mand_ligger_som_mand_har_redt_lores_1x1.webp" alt="" /></div>
           </a>
           <div class="grid grid-cols-2 p-5">
             <div>
+              <img src="" alt="" />
               <a href="#">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Titel</h5>
               </a>
@@ -86,19 +101,19 @@
               <div class="grid grid-cols-2 gap-1">
                 <label class="my-auto" for="dato">D. 06/08</label>
 
-                <select name="dato" id="dato">
+                <select class="w-32" name="dato" id="dato">
+                  <option value="Tidspunkt">Tidspunkt</option>
                   <option value="Kl. 19.30">Kl. 19.30</option>
                   <option value="Kl. 19.30">Kl. 21.15</option>
                 </select>
                 <label class="my-auto" for="dato">D. 06/08</label>
 
-                <select name="dato" id="dato">
+                <select class="w-32" name="dato" id="dato">
                   <option value="Kl. 19.30">Kl. 19.30</option>
                   <option value="Kl. 19.30">Kl. 21.15</option>
                 </select>
               </div>
             </div>
-            <a href="#" class="ml-auto mt-auto inline-flex items-center rounded-lg bg-red-600 px-6 py-3 text-center text-sm font-medium text-white hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300"> Køb billet</a>
           </div>
         </div>
 
