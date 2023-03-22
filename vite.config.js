@@ -20,6 +20,7 @@ export default defineConfig({
         five: resolve(__dirname, "src/opencall.html"),
         six: resolve(__dirname, "src/frivillige.html"),
         seven: resolve(__dirname, "src/kontakt.html"),
+        eight: resolve(__dirname, "src/singleview.html"),
 
         // about: resolve(__dirname, "src/about.html"),
       },
