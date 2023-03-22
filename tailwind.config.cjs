@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('../public/img/iPhone_.png')",
+        rebirth: "url('../public/img/rebirth.png')",
       },
     },
   },
