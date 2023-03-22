@@ -10,11 +10,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="./assets/style-6f59e5b5.css">
+    <link rel="stylesheet" href="./assets/style-0b7c0fd6.css">
   </head>
 
-  <body class="bg-hero bg-cover bg-right-top bg-no-repeat ">
-    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ ' bg-tbac' : isOpen , 'bg-transparent' : !isOpen}">
+  <body class="bg-hero bg-cover bg-right-top bg-no-repeat bg-stone-100 ">
+    <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ ' bg-stone-100 bg-opacity-75' : isOpen , 'bg-stone-100 bg-opacity-75' : !isOpen}">
       <!--Logo etc-->
       <div class="mr-6 flex flex-shrink-0 items-center text-black lg:block">
         <a class="text-white no-underline hover:text-gray-600 hover:no-underline" href="index.html">
@@ -31,12 +31,15 @@
       </button>
 
       <!--Menu-->
-      <div class="bg-stone-100 bg-opacity-75 w-full flex-grow lg:flex lg:w-auto lg:items-center" :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
+      <div class="w-full flex-grow lg:flex lg:w-auto lg:items-center" :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
         <ul class="list-reset flex-1 items-center justify-end pt-6 lg:flex lg:pt-0">
           <li class="mr-3">
             <a class="200ms inline-block py-2 px-4 font-bold text-red-500 underline filter transition hover:scale-110 hover:text-red-400 hover:underline" href="index.html" @click="isOpen = false">Forside </a>
           </li>
           <li class="mr-3">
+            <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="singleview.html" @click="isOpen = false">Singleview </a>
+          </li>
+           <li class="mr-3">
             <a class="200ms inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="program.html" @click="isOpen = false">Program </a>
           </li>
           <li class="mr-3">
@@ -83,7 +86,7 @@
     </nav>
 
     <!-- hero -->
-    <div class="px-8 ">
+    <div class="px-8 max-w-lg mx-auto">
       <div class="mx-auto grid grid-cols-2">
         <div class="">
           <h1 class="mt-10 text-7xl font-bold">Vildskud</h1>
@@ -97,15 +100,8 @@
           <h3 class="text-6xl">2023</h3>
           <h4 class="text-3xl leading-4">2. - 6. August</h4>
         </div>
-        <!-- <div class="mt-20">
-          <h3 class="text-4xl text-sky-300">zebu</h3>
-          <h3 class="text-4xl text-pink-300">downunder</h3>
-          <h4 class="text-4xl text-orange-300">teaterhuset</h4>
-          <h3 class="text-end text-base text-gray-500">xenon</h3>
-          <h4 class="text-end text-base text-gray-500">vox</h4>
-        </div> -->
+ 
       </div>
-      <!-- <h4 class="mb-20 font-normal">Vildskuds mål er at give undergrunden i dansk scenekunst en platform med mulighed for at møde et bredt publikum, og på den måde skabe synlighed for vækstlaget. Desuden kan de deltagende scenekunstgrupper også møde hinanden på tværs af genrer og arbejdsmetoder med henblik på gensidig udvikling og læring.</h4> -->
 
       <section class="">
         <h3 class="mt-10 mb-20 text-center text-4xl italic md:text-6xl lg:text-6xl"><span class="text-8xl"> "</span><span class="font-bold text-5xl">Vildskud</span> er den førende festival for <span class="font-bold text-5xl">teater</span> og <span class="font-bold text-5xl">performance</span> kunst i København <span class="text-4xl">"</span> <br>  <span class="text-2xl">- Person, festivalsgæst</span></h3>
@@ -191,7 +187,7 @@
       </div>
 
 
-                   <div class="flex bg-stone-100 bg-opacity-80 shadow-xl p-2 rounded-sm">
+                   <div class="flex bg-stone-100 bg-opacity-80 shadow-xl  mt-2 p-2 rounded-sm">
        <div> <img class="pr-2" src="img/vildskud_logo.webp" alt=""></div>
        <div class="grid content-between"> <h3 class="text-lg font-medium leading-5">Vildskud klæder dig på til <span class="underline"> ny dansk dramatik</h3></span>
        <div class="flex gap-2 mt-1 "> <p class="bg-lime-300 px-2 rounded-sm">04/08</p>
@@ -201,13 +197,13 @@
       </div>
 
 
-                   <div class="flex bg-stone-100 bg-opacity-80 shadow-xl p-2 rounded-sm">
+                   <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mb-20  mt-2 p-2 rounded-sm">
        <div> <img class="pr-2" src="img/vildskud_logo.webp" alt=""></div>
        <div class="grid content-between"> <h3 class="text-lg font-medium leading-5">Vildskud klæder dig på til <span class="underline">scenekunst om tabu</h3></span></h3>
        <div class="flex gap-2 mt-1 "> <p class="bg-lime-300 px-2 rounded-sm">03/08</p>
         <p class="px-2 rounded-sm text-transparent">06/08</p>
         <p class=" px-2 rounded-sm text-transparent">21/08</p></div>
-<h4 class="text-gray-400 mt-2 mb-20">Ukirke</h4></div>
+<h4 class="text-gray-400 mt-2">Ukirke</h4></div>
       </div>
 
 
