@@ -6,6 +6,11 @@ module.exports = {
       backgroundImage: {
         hero: "url('../public/img/iPhone_.png')",
         rebirth: "url('../public/img/rebirth.png')",
+        mandligger: "url('../public/img/mandligger.png')",
+        rebirth: "url('../public/img/rebirth.png')",
+        rebirth: "url('../public/img/rebirth.png')",
+        rebirth: "url('../public/img/rebirth.png')",
+        rebirth: "url('../public/img/rebirth.png')",
       },
     },
   },
