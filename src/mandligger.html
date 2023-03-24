@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-stone-100 bg-mandligger bg-cover bg-center bg-no-repeat">
+  <body class="bg-stone-100">
     <nav class="top-0 z-10 flex w-full flex-wrap items-center justify-between p-6" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" :class="{ ' bg-stone-100 bg-opacity-75' : isOpen , 'bg-stone-100 bg-opacity-75' : !isOpen}">
       <!--Logo etc-->
       <div class="mr-6 flex flex-shrink-0 items-center text-black lg:block">
@@ -108,7 +108,7 @@
         <div class="flex">
           <p class="mr-auto"><span class="text-gray-500"> VOX, Teaterhuset</span> <br /></p>
 
-          <a class="mt-auto underline" href="">Kort</a>
+          <a class="mt-auto underline" href="https://www.google.com/maps/place/Teaterhuset/@55.6764034,12.5721937,17z/data=!3m1!4b1!4m6!3m5!1s0x4652531164a3fb89:0xe98f70415a605063!8m2!3d55.6764034!4d12.5747686!16s%2Fg%2F11xhb0wpf">Kort</a>
         </div>
 
         <h4 class="mt-10">SPILLESTIDSPUNKTER</h4>
@@ -146,7 +146,7 @@
         <div class="mt-10 grid">
           <p>
             <span class="font-semibold">OBS</span> <br />
-            Ønsker du at se flere forestillinger, kan det anbefales at købe dagsbillet eller partout.
+            Ønsker du at se flere forestillinger, kan det anbefales at købe dagsbillet eller partout via <a class="underline" href="program.html"> program</a> siden.
           </p>
           <a class="mt-5 mr-auto mb-10 rounded-sm border-4 border-double border-red-700 bg-red-400 px-5 py-2" href="">Køb billet</a>
         </div>
