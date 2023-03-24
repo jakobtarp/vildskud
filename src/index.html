@@ -13,26 +13,15 @@
   </head>
 
   <body class="bg-hero bg-cover bg-right-top bg-no-repeat bg-stone-100 ">
-      <!--Logo etc-->
 
-     
-
-      <!-- Toggle button (hidden on large screens) -->
-      <!-- <button @click="isOpen = !isOpen" type="button" class="block px-2 text-white hover:text-white focus:text-gray-500 focus:outline-none lg:hidden" :class="{ 'transition transform-180': isOpen }">
-        <svg class="h-8 w-8 fill-current text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
-          <path x-show="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
-        </svg>
-      </button> -->
-
-      <!--Menu-->
+    
 
 
     <!-- hero -->
     <div class="px-8 max-w-lg mx-auto">
        <nav class="flex">
       <a href="index.html"> <img class="w-20" src="img/vildskud-logo-2022.webp" alt="" /></a>
-      <a class="200ms ml-auto my-auto inline-block py-2 px-4 text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="program.html">Program</a>
+      <a class="200ms ml-auto my-auto inline-block py-2 px-4 uppercase text-xl text-black filter transition hover:scale-110 hover:text-red-400 hover:underline" href="program.html">Program</a>
       </nav>
       <div class="mx-auto grid grid-cols-2">
         <div class="">
@@ -56,7 +45,11 @@
 
       <!-- Tabel -->
 <!-- Program -->
-      <h2>Program</h2>
+  <h2>Program</h2>
+<div class="flex gap-2 mb-5">
+      <p class="bg-lime-300 px-2 rounded-sm">Ledig</p>
+      <p class="bg-amber-200 px-2 rounded-sm">Begrænset</p>
+      <p class="bg-rose-400 px-2 rounded-sm">Venteliste</p></div>
 <a class="cursor-pointer" href="mandligger.html">
                    <div class="flex bg-stone-100 bg-opacity-80 shadow-xl p-2 rounded-sm">
        <div> <img class="pr-2" src="img/mand_ligger_som_mand_har_redt_lores_1x1.webp" alt=""></div>
@@ -72,7 +65,7 @@
                        <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-2 p-2 rounded-sm">
        <div> <img class="pr-2" src="img/what_fires_together_wires_together_lores_1x1.webp" alt=""></div>
        <div class="grid content-between"> <h3 class="text-lg font-medium leading-5">What fires together wires together</h3>
-       <div class="flex gap-2 mt-1"> <p class="bg-red-300 px-2 rounded-sm">02/08</p>
+       <div class="flex gap-2 mt-1"> <p class="bg-rose-400 px-2 rounded-sm">02/08</p>
         <p class="bg-amber-200 px-2 rounded-sm">03/08</p>
         <p class=" px-2 rounded-sm text-transparent">21/08</p></div>
 <h4 class="text-gray-400 mt-2">ZeBU</h4></div>
@@ -84,7 +77,7 @@
        <div> <img class="pr-2" src="img/gogo-yo-yoku_lores_1x1.webp" alt=""></div>
        <div class="grid content-between"> <h3 class="text-lg font-medium">Gogo yo-yoku <br></h3>
        <div class="flex gap-2 "> <p class="bg-lime-300 px-2 rounded-sm">04/08</p>
-        <p class="bg-red-300 px-2 rounded-sm">05/08</p>
+        <p class="bg-rose-400 px-2 rounded-sm">05/08</p>
        <p class=" px-2 rounded-sm text-transparent">21/08</p></div>
 <h4 class="text-gray-400">Xenon, Teaterhuset</h4></div>
       </div>
@@ -94,7 +87,7 @@
       <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-2 p-2 rounded-sm">
        <div> <img class="pr-2" src="img/re-birth_lores_1x1.webp" alt=""></div>
        <div class="grid content-between"> <h3 class="text-lg font-medium">Re-birth</h3>
-       <div class="flex gap-2 "> <p class="bg-red-300 px-2 rounded-sm">04/08</p>
+       <div class="flex gap-2 "> <p class="bg-rose-400 px-2 rounded-sm">04/08</p>
         <p class="bg-amber-200 px-2 rounded-sm">05/08</p>
         <p class="bg-lime-300 px-2 rounded-sm">06/08</p></div>
 <h4 class="text-gray-400">Downunder</h4></div>
@@ -115,7 +108,7 @@
       <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-2 p-2 rounded-sm">
        <div> <img class="pr-2" src="img/vild_med_mig_lores_1x1.webp" alt=""></div>
        <div class="grid content-between"> <h3 class="text-lg font-medium">Vild med mig</h3>
-       <div class="flex gap-2 "> <p class="bg-red-300 px-2 rounded-sm">02/08</p>
+       <div class="flex gap-2 "> <p class="bg-rose-400 px-2 rounded-sm">02/08</p>
         <p class="bg-amber-200 px-2 rounded-sm">03/08</p>
        <p class=" px-2 rounded-sm text-transparent">21/08</p></div>
 <h4 class="text-gray-400">Vox, Teaterhuset</h4></div>
@@ -126,7 +119,7 @@
       <div class="flex bg-stone-100 bg-opacity-80 shadow-xl mt-2 p-2 rounded-sm">
        <div> <img class="pr-2" src="img/det_levende_rum_lores_1x1.webp" alt=""></div>
        <div class="grid content-between"> <h3 class="text-lg font-medium">Det levende rum</h3>
-       <div class="flex gap-2 "> <p class="bg-red-300 px-2 rounded-sm">04/08</p>
+       <div class="flex gap-2 "> <p class="bg-rose-400 px-2 rounded-sm">04/08</p>
         <p class="bg-amber-200 px-2 rounded-sm">05/08</p>
         <p class="bg-lime-300 px-2 rounded-sm">06/08</p></div>
 <h4 class="text-gray-400">ZeBU</h4></div>
@@ -170,39 +163,7 @@
      
 
 
-      
-      <!-- hero unit -->
-      <!-- <div class="bg-stone-100 px-8"> -->
-        <!-- Sektion 1 / Reviews  -->
-        <!-- <div class="grid h-screen place-items-center">
-          <h2 class="mt-auto">Anmeldelser</h2>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="grid gap-3">
-              <img class="mx-auto w-48" src="img/PR-billede-Junos-Disicple.webp" alt="" />
-              <div class="flex place-content-center">
-                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex alias, laborum porro quam, eligendi quis temporibus mollitia.</p>
-              <div class="grid text-white"><a class="mt-4 rounded-xl bg-red-500 px-6 py-3 text-center" href="#">Køb billet</a></div>
-            </div>
-            <div class="grid gap-3">
-              <img class="mx-auto w-48" src="img/PR-billede-Junos-Disicple.webp" alt="" />
-              <div class="flex place-content-center">
-                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-                <img class="w-7" src="https://api.iconify.design/teenyicons:star-solid.svg?black=%23888888" alt="" />
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex alias, laborum porro quam, eligendi quis temporibus mollitia.</p>
-              <a class="mt-4 rounded-xl bg-red-500 px-6 py-3 text-center text-white" href="#">Køb billet</a>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </div>
+  
     <!-- Footer -->
 
     <footer class="bottom-0 mx-auto w-full bg-stone-100 opacity-70">
@@ -215,19 +176,32 @@
             </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
-            <div>
-              <h2 class="mb-6 text-sm font-extrabold uppercase text-gray-900 ublack">Kontakt</h2>
+                  <div>
+              <h2 class="mb-6 text-base font-extrabold uppercase text-gray-900 ublack">Vær med</h2>
               <ul class="text-black">
                 <li class="mb-4">
-                  <a href="https://www.vildskud.dk/" class="hover:underline">info@vildskud.dk</a>
+        <a class="py-3 hover:bg-red-300" href="frivillige.html">Frivillige</a>
                 </li>
                 <li>
-                  <a href="https://www.vildskud.dk/" class="hover:underline">CVR: 31929911</a>
+                 
+                <a class="py-3 hover:bg-red-300" href="opencall.html">Open Call</a>
+                </li>
+              </ul>
+            </div>
+                  <div>
+              <h2 class="mb-6 text-base font-extrabold uppercase text-gray-900 ublack">Praktisk info</h2>
+              <ul class="text-black">
+                <li class="mb-4">
+<a class=" py-3 hover:bg-red-300" href="omvildskud.html">Om os</a>
+                </li>
+                <li>
+        
+                <a class="py-3 hover:bg-red-300" href="kontakt.html">Kontakt</a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-extrabold uppercase text-gray-900 ublack">Følg os</h2>
+              <h2 class="mb-6 text-base font-extrabold uppercase text-gray-900 ublack">Følg os</h2>
               <ul class="text-black">
                 <li class="mb-4">
                   <a href="https://www.instagram.com/vildskud_festival/" class="hover:underline">Instagram</a>
@@ -238,7 +212,7 @@
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-extrabold uppercase text-gray-900 ublack">Information</h2>
+              <h2 class="mb-6 text-base font-extrabold uppercase text-gray-900 ublack">Information</h2>
               <ul class="text-black">
                 <li class="mb-4">
                   <a href="#" class="hover:underline">Privatlivspolitik</a>
@@ -250,9 +224,9 @@
             </div>
           </div>
         </div>
-        <hr class="my-6 border-gray-200 dark:border-white sm:mx-auto lg:my-8" />
+        <hr class="my-6 border-gray-400 sm:mx-auto lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-black sm:text-center">© 2023 <a href="https://www.vildskud.dk/" class="hover:underline">Vildskud™</a>. All Rights Reserved. </span>
+          <span class="text-base text-black sm:text-center">© 2023 <a href="https://www.vildskud.dk/" class="hover:underline">Vildskud™</a>. All Rights Reserved. </span>
           <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <a href="https://www.facebook.com/vildskudfestival/?locale=da_DK" class="text-black hover:text-gray-900 dark:hover:text-white">
               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
