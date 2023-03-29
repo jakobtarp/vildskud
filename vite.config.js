@@ -27,7 +27,6 @@ export default defineConfig({
         fourteen: resolve(__dirname, "src/whatfires.html"),
         fithteen: resolve(__dirname, "src/rebirth.html"),
         sixteen: resolve(__dirname, "src/sitemap.html"),
-        seventeen: resolve(__dirname, "src/sitemap.xml"),
 
         // about: resolve(__dirname, "src/about.html"),
       },
